@@ -27,7 +27,7 @@ The pipeline consists of **five** image transformation steps as described below:
 
 > **Grayscale --> Blur --> Edges --> Region-of-Interest --> Lines**
 
-1. **Grayscale conversion:** first the image is converted to grayscale in order to preapre it for further processing.
+1. **Grayscale conversion:** initially the image is converted to grayscale in order to preapre it for further processing.
 2. **Gaussian Blur:** then the image is blurred and smoothened in order to remove any noise
 3. **Detect Edges:** in this step, *Canny edge detection* algorithm is applied to find edges (pixes with highest gradient) in the image.
 4. **Define a region of interest:** then a region of interest, part of the image that includes only the edge of the road, is defined to exclude areas that will not have lanes in it.
@@ -41,4 +41,4 @@ One of the shortcoming is when there are no clear edges that can be identified b
 
 ### Improvements
 
-A possible improvement that is implemented in the pipeline is to consider slopes to eliminate extraneous lines. When a lane is not detected, a few previous frames could be considered to extrapolate but the pipeline has to be robust to not over compensate for more than a couple frames. A moving average of lines over certain number of frames could be computed to keep the detetcted lane lines to smoothen, especially when the lanes turn.
+A possible improvement would be to consider the slopes to eliminate extraneous lines. When a lane is not detected, a few previous frames could be considered to extrapolate but the pipeline has to be robust to not over compensate for more than a couple frames. A moving average of lines over certain number of frames could be computed to keep the detetcted lane lines to smoothen, especially when the lanes turn.
