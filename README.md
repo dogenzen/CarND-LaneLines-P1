@@ -28,7 +28,7 @@ The pipeline consists of **five** image transformation steps as described below:
 > **Grayscale --> Blur --> Edges --> Region-of-Interest --> Lines**
 
 1. **Grayscale conversion:** initially the image is converted to grayscale in order to preapre it for further processing.
-2. **Gaussian Blur:** then the image is blurred and smoothened in order to remove any noise
+2. **Gaussian Blur:** then the image is blurred and smoothened in order to remove any noise.
 3. **Detect Edges:** in this step, *Canny edge detection* algorithm is applied to find edges (pixes with highest gradient) in the image.
 4. **Define a region of interest:** then a region of interest, part of the image that includes only the edge of the road, is defined to exclude areas that will not have lanes in it.
 5. **Detect Lines:** finally, **Hough transfromation algorithm** is applied to find lines in the region of interest.
