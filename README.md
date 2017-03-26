@@ -41,4 +41,4 @@ One of the shortcoming is when there are no clear edges that can be identified b
 
 ### Improvements
 
-A possible improvement would be to consider the slopes to eliminate extraneous lines. When a lane is not detected, a few previous frames could be considered to extrapolate but the pipeline has to be robust to not over compensate for more than a couple frames. A moving average of lines over certain number of frames could be computed to keep the detetcted lane lines to smoothen, especially when the lanes turn.
+A possible improvement would be to consider the slopes to eliminate extraneous lines. When a lane is not detected, a few previous frames could be considered to extrapolate but the pipeline has to be robust to not over compensate for more than a couple frames. A moving average of lines over certain number of frames could be computed to keep the detetcted lane lines smooth, especially when the lanes turn.
